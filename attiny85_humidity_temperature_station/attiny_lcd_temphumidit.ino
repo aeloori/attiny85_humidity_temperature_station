@@ -6,7 +6,7 @@
 #define DHTTYPE DHT11 
 DHT dht(DHTPIN, DHTTYPE);
 #define TEMPTYPE 0   
-LiquidCrystal_I2C lcd(0x27, 0, 2);
+LiquidCrystal_I2C lcd(0x27, 0, 2);//config lcd screen using I2C 
 
 void setup(){
    if (F_CPU == 16000000) clock_prescale_set(clock_div_1); // 5V Trinket: run at 16 MHz
